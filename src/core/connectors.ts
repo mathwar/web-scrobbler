@@ -2112,4 +2112,10 @@ export default <ConnectorMeta[]>[
 		js: 'trackerhub.js',
 		id: 'trackerhub',
 	},
+	{
+		label: 'NOSTALGIE Radio Deutschland',
+		matches: ['*://nostalgie-radio.de/*'],
+		js: 'nostalgie-de.js',
+		id: 'nostalgie-de',
+	},
 ];
