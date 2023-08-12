@@ -13,3 +13,10 @@ Connector.pauseButtonSelector = '.nrj-webradio-icon-pause2';
 Connector.isPlaying = () => {
 	return Util.hasElementClass('.play-btn', 'is-playing');
 };
+
+Connector.isScrobblingAllowed = () => {
+	return (
+		!Connector.getArtist()?.includes('ARTIST ARTIST ...') &&
+		!Connector.getTrack()?.includes('TITEL TITEL ...')
+	);
+};
